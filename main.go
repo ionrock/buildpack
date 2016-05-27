@@ -14,7 +14,9 @@
 
 package main
 
-import "github.com/ionrock/buildpack/cmd"
+import (
+	"github.com/ionrock/buildpack/cmd"
+)
 
 func main() {
 	cmd.Execute()

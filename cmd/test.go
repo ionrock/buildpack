@@ -19,26 +19,26 @@ import (
 	"github.com/spf13/cobra"
 )
 
-// buildCmd represents the build command
-var buildCmd = &cobra.Command{
-	Use:   "build",
-	Short: "Build a repo using a buildpack",
+// testCmd represents the test command
+var testCmd = &cobra.Command{
+	Use:   "test",
+	Short: "Run a test of a build",
 	Run: func(cmd *cobra.Command, args []string) {
-		buildpack.Build(args[0], args[1])
+		buildpack.Test(args[0], args[1])
 	},
 }
 
 func init() {
-	RootCmd.AddCommand(buildCmd)
+	RootCmd.AddCommand(testCmd)
 
 	// Here you will define your flags and configuration settings.
 
 	// Cobra supports Persistent Flags which will work for this command
 	// and all subcommands, e.g.:
-	// buildCmd.PersistentFlags().String("foo", "", "A help for foo")
+	// testCmd.PersistentFlags().String("foo", "", "A help for foo")
 
 	// Cobra supports local flags which will only run when this command
 	// is called directly, e.g.:
-	// buildCmd.Flags().BoolP("toggle", "t", false, "Help message for toggle")
+	// testCmd.Flags().BoolP("toggle", "t", false, "Help message for toggle")
 
 }

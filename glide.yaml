@@ -1,0 +1,6 @@
+package: github.com/ionrock/buildpack
+import:
+- package: github.com/Sirupsen/logrus
+- package: github.com/spf13/cobra
+- package: github.com/spf13/viper
+- package: gopkg.in/yaml.v2

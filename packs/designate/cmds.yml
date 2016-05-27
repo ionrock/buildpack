@@ -1,0 +1,3 @@
+bootstrap: make bootstrap
+test: make test
+run: make run
